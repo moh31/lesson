@@ -1,0 +1,22 @@
+ <b:widget id='HTML111' locked='true' title='Boxed Style' type='HTML' version='1'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>boxed</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+            <b:if cond='data:content == &quot;boxed&quot;'>
+              <script type='text/javascript'>
+                //<![CDATA[	
+                $( "body" ).addClass( "boxed-layout" );
+                //]]>
+              </script>
+              <b:else/>
+              <b:if cond='data:content == &quot;dark&quot;'>
+                <script type='text/javascript'>
+                  //<![CDATA[	
+                  $( "body" ).addClass( "dark-style" );
+                  //]]>
+                </script>
+              </b:if>
+            </b:if>
+          </b:includable>
+        </b:widget>
